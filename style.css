@@ -8,6 +8,7 @@
 *,
 *:active,
 *:hover{
+    
     box-sizing: border-box;
 }
 
@@ -20,8 +21,8 @@ background-color: #fff;
     grid-template-columns: 2fr 8fr ;
     grid-template-rows: 2fr 12fr;
     overflow-x: hidden;
-    margin: 10px;
-    gap: 15px
+    padding: 20px 42px 20px 14px;
+    gap: 22px
 }
 
 .sidebar{
@@ -80,12 +81,13 @@ li{
 }
 
 .header{
-    background-color: var(--color-white);
+    background-color: var(--color-primary-light);
     grid-column: 2 / 3;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 30px;
+ 
 }
 .header__left-column{
     display: flex;
@@ -182,7 +184,22 @@ li{
 }
 
 .main{
-    background-color: var(--color-primary-light);
+    background-color: transparent;
     grid-column:2 / 3 ;
     grid-row: 2 / 3 ;
+
+    padding: 40px;
+
+   
+}
+
+.card-deck{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 1fr 1fr;
+    gap: 20%;
+}
+
+.card{
+    border-left:5px solid #f26e0c;
 }
