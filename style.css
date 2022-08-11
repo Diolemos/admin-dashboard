@@ -5,6 +5,11 @@
     --color-white: #f5f5f5;
 }
 
+*,
+*:active,
+*:hover{
+    box-sizing: border-box;
+}
 
 body{
     font-family: 'League Gothic', sans-serif;
@@ -77,7 +82,41 @@ li{
 .header{
     background-color: var(--color-white);
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
+
+.profile-picture{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url("images/vic-damone.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.image__sm{
+    width: 80px !important ;
+    height: 80px !important;
+
+}
+
+.btn,
+.btn:visited,
+.btn:link{
+    display: inline-block;
+    border: none;
+    text-decoration: none;
+    width: 70px;
+    height: 45px;
+    border-radius: 200px;
+
+    text-align: center;
+    padding-top: 12px;
+    color: var(--color-white);
+    background: var(--color-primary-dark);
+
+}
+
 .main{
     background-color: var(--color-primary-light);
     grid-column:2 / 3 ;
