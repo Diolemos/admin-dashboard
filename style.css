@@ -1,7 +1,8 @@
 :root{
-    --color-primary: #C21C04;
-    --color-primary-light: #cc5441;
-    --color-primary-dark: #421b15;
+    --color-primary: #1E201E;
+    --color-primary-light: #697565;
+    --color-primary-dark: #697565;
+    --color-secondary-light: #ECDFCC;
     --color-white: #f5f5f5;
 }
 
@@ -12,21 +13,21 @@
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'League Gothic', sans-serif;
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
     width: 100vw;
     min-height: 100vh;
-background-color: #fff;
+    background-color: var(--color-secondary-light);
     display: grid;
-    grid-template-columns: 2fr 8fr ;
+    grid-template-columns: 2fr 8fr;
     grid-template-rows: 2fr 12fr;
     overflow-x: hidden;
     padding: 20px 42px 20px 14px;
-    gap: 22px
+    gap: 22px;
 }
-
 .sidebar{
-    background-color: var(--color-primary);
+    background-color: var(--color-primary-light);
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     padding: 25px;
@@ -107,6 +108,11 @@ li{
     border: 1px solid #eee;
     border-radius: 200px;
     
+    
+}
+.header__form input:focus{
+    border:1px solid rgb(0, 109, 76);
+    outline:1px solid rgb(2, 116, 53);
 }
 
 .user-welcome-text{
@@ -148,12 +154,12 @@ li{
     display: flex;
     justify-content: end;
     gap: 22px;
-    padding-right: 38px;
+    padding-right: 18px;
 }
 
 .user-action-buttons{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: end;
     align-items: center;
 }
 
@@ -201,5 +207,7 @@ li{
 }
 
 .card{
-    border-left:5px solid #f26e0c;
+    /* border-radius: 4px; */
+    border-left:6px solid var(--color-primary-light);
+    padding-left: 6px;
 }
