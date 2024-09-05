@@ -1,0 +1,112 @@
+.header{
+    background-color: var(--color-primary-light);
+    grid-column: 2 / 3;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+ 
+}
+.header__left-column{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.header__form{
+    display: flex;
+    align-items:stretch;
+    gap: 8px;
+}
+.header__form input{
+    flex-grow: 1;
+    margin-right: 12px;
+
+    border: 1px solid #eee;
+    border-radius: 200px;
+    
+    
+}
+.header__form input:focus{
+    border:1px solid rgb(0, 109, 76);
+    outline:1px solid rgb(2, 116, 53);
+}
+
+.user-welcome-text{
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+
+.user-name{
+    font-size: 28px;
+    margin-top: 8px;
+
+}
+
+
+.profile-picture{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url("images/vic-damone.jpg");
+    background-position: center;
+    background-size: cover;
+   
+}
+
+.header__user-info .profile-picture{
+    float: left;
+    margin-right: 5px;
+}
+
+.header__right-column{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+.user-info{
+    display: flex;
+    justify-content: end;
+    gap: 22px;
+    padding-right: 18px;
+}
+
+.user-action-buttons{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: var(--color-white);
+}
+
+.user-action-buttons a:hover{
+    text-shadow: 0px 0px 9px rgba(255,255,255,0.92);
+}
+
+
+
+
+.image__sm{
+    width: 80px !important ;
+    height: 80px !important;
+
+}
+
+.btn,
+.btn:visited,
+.btn:link{
+    display: inline-block;
+    border: none;
+    text-decoration: none;
+    width: 70px;
+    height: 45px;
+    border-radius: 200px;
+
+    text-align: center;
+    padding-top: 12px;
+    color: var(--color-white);
+    background: var(--color-primary-dark);
+
+}

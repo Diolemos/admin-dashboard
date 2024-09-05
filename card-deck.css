@@ -1,0 +1,22 @@
+.main{
+    background-color: transparent;
+    grid-column:2 / 3 ;
+    grid-row: 2 / 3 ;
+
+    padding: 40px;
+
+   
+}
+
+.card-deck{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 1fr 1fr;
+    gap: 20%;
+}
+
+.card{
+    /* border-radius: 4px; */
+    border-left:6px solid var(--color-primary-light);
+    padding-left: 6px;
+}
